@@ -1,18 +1,18 @@
 <template>
-  <NoScroll>
-    <Preload :isLoaded="isLoaded" />
-    <div id="app" class="flex flex-col w-screen h-screen absolute inset-0 m-auto">
-      <NavBar :resume="myInfo._Resume"></NavBar>
-      <ColCarousel class="flex-1"></ColCarousel>
-    </div>
-    <Contact />
-  </NoScroll>
+  <!-- <NoScroll> -->
+  <Preload :isLoaded="isLoaded" />
+  <div id="app" class="flex flex-col w-full h-full absolute inset-0 m-auto">
+    <NavBar :resume="myInfo._Resume"></NavBar>
+    <ColCarousel class="flex-1"></ColCarousel>
+  </div>
+  <Contact />
+  <!-- </NoScroll> -->
 </template>
 
 <script>
 import { getNotionData } from './service/index.js'
 import { reactive, ref, provide } from 'vue'
-import NoScroll from '@/components/NoScroll'
+// import NoScroll from '@/components/NoScroll'
 import Preload from '@/components/Preload'
 import NavBar from '@/components/NavBar'
 import ColCarousel from '@/components/ColCarousel'
@@ -71,7 +71,7 @@ export default {
     }
   },
   components: {
-    NoScroll,
+    // NoScroll,
     Preload,
     NavBar,
     ColCarousel,
