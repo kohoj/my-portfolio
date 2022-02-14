@@ -19,7 +19,7 @@
       </div>
 
       <div id="contactBtn">
-        <label @click="toVibrate" for="modal" class="btn btn-primary btn-outline modal-button">
+        <label for="modal" class="btn btn-primary btn-outline modal-button">
           <code class="text-base font-normal normal-case">Contact me</code>
         </label>
       </div>
@@ -29,13 +29,6 @@
 <script>
 export default {
   inject: ['myInfo'],
-  setup() {
-    const toVibrate = () => {
-      window.navigator.vibrate(200);
-      console.log('vibrated once!')
-    }
-    return { toVibrate }
-  }
 }
 </script>
 

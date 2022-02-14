@@ -3,16 +3,12 @@
   <!-- topBar part -->
   <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
-      <a @click="toVibrate" href="/components/carousel#hero" class="text-lg font-bold">
+      <a href="/components/carousel#hero" class="text-lg font-bold">
         <span :class="{ 'text-primary font-semibold': isHero }">#</span>&nbsp;Koho
       </a>
     </div>
 
-    <Guidance
-      @click="toVibrate"
-      :urlHash="{ isHero, isI, isE, isW }"
-      class="absolute inset-0 m-auto sm:hidden"
-    />
+    <Guidance :urlHash="{ isHero, isI, isE, isW }" class="absolute inset-0 m-auto sm:hidden" />
 
     <div id="moreBtn" class="navbar-end sm:hidden">
       <div class="dropdown dropdown-end dropdown-hover">
@@ -35,16 +31,16 @@
           class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-xs"
         >
           <li>
-            <a @click="toVibrate" href="/components/carousel#intro">Introduction</a>
+            <a href="/components/carousel#intro">Introduction</a>
           </li>
           <li>
-            <a @click="toVibrate" href="/components/carousel#exp">Experience</a>
+            <a href="/components/carousel#exp">Experience</a>
           </li>
           <li>
-            <a @click="toVibrate" href="/components/carousel#works">Works</a>
+            <a href="/components/carousel#works">Works</a>
           </li>
           <li>
-            <a @click="toVibrate">
+            <a>
               <label for="modal">Contact</label>
             </a>
           </li>
@@ -100,7 +96,7 @@
     </div>
   </div>
   <!-- arrow Btn -->
-  <ArrowBtn :toVibrate="toVibrate" :urlHash="{ isHero, isI, isE, isW }" />
+  <ArrowBtn :urlHash="{ isHero, isI, isE, isW }" />
 </template>
 <script>
 import { useRouter } from 'vue-router'
@@ -110,7 +106,7 @@ import ArrowBtn from '@/components/NavBar/ArrowBtn'
 export default {
   props: {
     resume: String,
-    toVibrate: Function
+    
   },
   setup() {
     const curUrl = ref(useRouter().currentRoute);

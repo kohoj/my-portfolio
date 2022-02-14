@@ -2,7 +2,6 @@
   <div id="container" class="absolute flex z-40 m-8 right-0 bottom-0">
     <a
       id="left"
-      @click="toVibrate"
       :href="`/components/carousel#${urlHash.isI ? 'hero' : (urlHash.isE ? 'intro' : 'exp')}`"
       v-show="!urlHash.isHero"
       class="btn btn-outline btn-circle mr-5 border-2"
@@ -38,7 +37,6 @@
     </a>
     <a
       id="right"
-      @click="toVibrate"
       :href="`/components/carousel#${urlHash.isHero ? 'intro' : (urlHash.isI ? 'exp' : (urlHash.isE ? 'works' : 'hero'))}`"
       class="btn btn-outline btn-circle border-2"
     >
@@ -91,7 +89,7 @@
 export default {
   props: {
     urlHash: Object,
-    toVibrate: Function
+
   }
 }
 </script>

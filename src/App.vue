@@ -2,10 +2,10 @@
   <NoScroll>
     <Preload :isLoaded="isLoaded" />
     <div id="app" class="flex flex-col w-screen h-screen absolute inset-0 m-auto">
-      <NavBar :toVibrate="toVibrate" :resume="myInfo._Resume"></NavBar>
+      <NavBar :resume="myInfo._Resume"></NavBar>
       <ColCarousel class="flex-1"></ColCarousel>
     </div>
-    <Contact :toVibrate="toVibrate" />
+    <Contact />
   </NoScroll>
 </template>
 
@@ -63,18 +63,11 @@ export default {
     })();
 
     provide('myInfo', myInfo);
-    provide('toVibrate', toVibrate);
-
-    // vibration
-    const toVibrate = () => {
-      window.navigator.vibrate(200);
-      console.log('vibrated once!')
-    }
 
     return {
       isLoaded,
       myInfo,
-      toVibrate
+
     }
   },
   components: {

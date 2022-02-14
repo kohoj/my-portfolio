@@ -82,7 +82,6 @@
           <!-- Wechat -->
           <div class="dropdown mr-4">
             <div
-              @click="toVibrate"
               tabindex="0"
               class="card w-14 bg-base-500 btn btn-outline text-base font-normal normal-case place-items-center"
             >
@@ -147,7 +146,7 @@
       </span>
       <!-- close btn -->
       <div class="modal-action">
-        <label @click="toVibrate" for="modal" class="btn btn-primary btn-outline">
+        <label for="modal" class="btn btn-primary btn-outline">
           <code class="text-base font-normal normal-case">Got it !</code>
         </label>
       </div>
@@ -157,6 +156,5 @@
 <script>
 export default {
   inject: ['myInfo'],
-  props: { toVibrate: Function }
 }
 </script>
