@@ -1,15 +1,88 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NoScroll>
+    <Preload :isLoaded="isLoaded" />
+    <div id="app" class="flex flex-col w-screen h-screen absolute inset-0 m-auto">
+      <NavBar :toVibrate="toVibrate" :resume="myInfo._Resume"></NavBar>
+      <ColCarousel class="flex-1"></ColCarousel>
+    </div>
+    <Contact :toVibrate="toVibrate" />
+  </NoScroll>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { getNotionData } from './service/index.js'
+import { reactive, ref, provide } from 'vue'
+import NoScroll from '@/components/NoScroll'
+import Preload from '@/components/Preload'
+import NavBar from '@/components/NavBar'
+import ColCarousel from '@/components/ColCarousel'
+import Contact from '@/components/Contact'
 export default {
   name: 'App',
+  setup() {
+    // data-collector
+    const myInfo = reactive({
+      _Email: '',
+      _Wechat: '',
+      _Instagram: '',
+      _GitHub: '',
+      _Codepen: '',
+      _Brief: '',
+      _Detail: '',
+      _Stack: [],
+      _Avatar: '',
+      _Resume: '',
+      _Ending: '',
+      _Exps: [],
+      _Works: [],
+    });
+
+    let isLoaded = ref(false);
+
+    // get data from notion
+    (async () => {
+      [
+        [{
+          email: myInfo._Email,
+          wechat: myInfo._Wechat,
+          instagram: myInfo._Instagram,
+          github: myInfo._GitHub,
+          codepen: myInfo._Codepen,
+          brief: myInfo._Brief,
+          detail: myInfo._Detail,
+          stack: myInfo._Stack,
+          avatar: [{ url: myInfo._Avatar }],
+          ending: myInfo._Ending,
+          resume: myInfo._Resume
+        }],
+        myInfo._Exps,
+        myInfo._Works
+      ] = await getNotionData();
+
+      isLoaded.value = true;
+    })();
+
+    provide('myInfo', myInfo);
+    provide('toVibrate', toVibrate);
+
+    // vibration
+    const toVibrate = () => {
+      window.navigator.vibrate(200);
+      console.log('vibrated once!')
+    }
+
+    return {
+      isLoaded,
+      myInfo,
+      toVibrate
+    }
+  },
   components: {
-    HelloWorld
+    NoScroll,
+    Preload,
+    NavBar,
+    ColCarousel,
+    Contact
   }
 }
 </script>
@@ -20,7 +93,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

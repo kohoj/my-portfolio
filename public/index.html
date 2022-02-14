@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html data-theme="forest" class="bg-neutral bg-opacity-85">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Koho Zheng</title>
+</head>
+
+<body>
+  <div id="app" class="fixed inset-0"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    let boxDom = document.getElementById("app");
+    window.onload = disabledMouseWheel();
+
+    function disabledMouseWheel() {
+      if (document.addEventListener) {
+        boxDom.addEventListener('DOMMouseScroll', scrollFunc, false);
+      }
+      boxDom.onmousewheel = boxDom.onmousewheel = scrollFunc;
+    }
+    //禁用滚轮事件函数
+    function scrollFunc(evt) {
+      evt = evt || window.event;
+      if (evt.preventDefault) {
+        // Firefox
+        evt.preventDefault();
+        evt.stopPropagation();
+      } else {
+        // IE
+        evt.cancelBubble = true;
+        evt.returnValue = false;
+      }
+      return false;
+    }
+
+  </script>
+</body>
+
 </html>
