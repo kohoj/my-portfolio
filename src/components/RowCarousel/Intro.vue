@@ -11,20 +11,12 @@
       <div class="card-body max-w-lg p-4">
         <p class="text-left mb-2 md:text-lg">{{ myInfo._Detail }}</p>
         <div class="flex flex-wrap">
-          <div v-for="(item, index) in myInfo._Stack" :key="index" class="flex items-center m-1">
-            <svg
-              class="w-4 h-4 -ml-2"
-              fill="#1EB854"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <code class="text-sm mr-2">{{ item }}</code>
+          <div
+            v-for="(item, i) in myInfo._Stack"
+            :key="i"
+            class="badge badge-primary badge-outline m-1 ml-0"
+          >
+            <code class="text-xs">{{ item }}</code>
           </div>
         </div>
       </div>
