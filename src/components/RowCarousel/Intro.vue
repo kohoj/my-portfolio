@@ -3,7 +3,7 @@
     id="container"
     class="flex items-start md:items-center justify-center bg-neutral bg-base-pattern rounded-box"
   >
-    <div class="mx-3 flex flex-col border items-center justify-center md:flex-row">
+    <div class="mx-3 flex flex-col items-center justify-center md:flex-row">
       <div class="md:self-start">
         <img class="w-24 sm:w-40 md:w-56 lg:w-60" :src="myInfo._Avatar" alt="Avatar" />
         <div class="card-title mb-0 px-0 border-b sm:border-0 md:text-2xl">About Me</div>
