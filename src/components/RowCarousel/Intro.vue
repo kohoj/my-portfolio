@@ -1,24 +1,39 @@
-<template>
-  <div class="carousel rounded-box">
-    <div id="intro" class="w-full h-full rounded-box carousel-item">
-      <Intro class="w-full" />
-    </div>
-    <div id="exp" class="w-full h-full rounded-box carousel-item">
-      <div
-        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
-      >待完成2</div>
-    </div>
-    <div id="works" class="w-full h-full rounded-box carousel-item">
-      <div
-        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
-      >待完成3</div>
+<template >
+  <div
+    id="container"
+    class="flex items-start md:items-center justify-center bg-neutral bg-base-pattern rounded-box"
+  >
+    <div class="mx-3 flex flex-col border items-center justify-center md:flex-row">
+      <div class="md:self-start">
+        <img class="w-24 sm:w-40 md:w-56 lg:w-60" :src="myInfo._Avatar" alt="Avatar" />
+        <div class="card-title mb-0 px-0 border-b sm:border-0 md:text-2xl">About Me</div>
+      </div>
+      <div class="card-body max-w-lg p-4">
+        <p class="text-left mb-2 md:text-lg">{{ myInfo._Detail }}</p>
+        <div class="flex flex-wrap">
+          <div v-for="(item, index) in myInfo._Stack" :key="index" class="flex items-center m-1">
+            <svg
+              class="w-4 h-4 -ml-2"
+              fill="#1EB854"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <code class="text-sm mr-2">{{ item }}</code>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Intro from '@/components/RowCarousel/Intro'
 export default {
-  components: { Intro }
+  inject: ['myInfo'],
 }
 </script>
 <style>
