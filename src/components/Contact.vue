@@ -101,7 +101,7 @@
             </div>
             <div
               tabindex="0"
-              class="mb-4 h-12 w-32 shadow card border compact dropdown-content bg-neutral rounded-box"
+              class="mb-4 h-12 w-32 shadow card compact dropdown-content bg-gray-100 text-gray-800 rounded-box"
             >
               <div class="card-body">
                 <span class="select-none">
