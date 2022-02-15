@@ -29,7 +29,6 @@ export default {
       }
       clearInterval(timer);
       timer = null;
-      window.navigator.vibrate(200);
       console.log("Load-page Unmounted!");
     }, 50);
 

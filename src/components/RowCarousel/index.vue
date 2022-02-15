@@ -1,22 +1,24 @@
 <template>
   <div class="carousel">
     <div id="intro" class="w-full h-full carousel-item">
-      <Pattern class="w-full" />
+      <div
+        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
+      >待完成1</div>
     </div>
     <div id="exp" class="w-full h-full carousel-item">
-      <Pattern class="w-full" />
+      <div
+        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
+      >待完成2</div>
     </div>
     <div id="works" class="w-full h-full carousel-item">
-      <div class="bg-neutral bg-base-pattern w-full"></div>
+      <div
+        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
+      >待完成3</div>
     </div>
   </div>
 </template>
 <script>
-import Pattern from '@/components/ColCarousel/Hero'
 export default {
-  components: {
-    Pattern
-  }
 }
 </script>
 <style>

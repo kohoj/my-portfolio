@@ -28,7 +28,7 @@
         </div>
         <ul
           tabindex="0"
-          class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-xs"
+          class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-sm"
         >
           <li>
             <a href="/components/carousel#intro">Introduction</a>
@@ -106,7 +106,7 @@ import ArrowBtn from '@/components/NavBar/ArrowBtn'
 export default {
   props: {
     resume: String,
-    
+
   },
   setup() {
     const curUrl = ref(useRouter().currentRoute);

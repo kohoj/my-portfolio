@@ -42,7 +42,6 @@ export default {
 			if (moveY > 0) {
 				// 如果在顶部,阻止浏览器默认的滚动,避免触发bounce
 				if (scrollTop <= 0) e.preventDefault();
-
 				// 上拉
 			} else {
 				const scrollHeight = this.scroll.scrollHeight; // 全文区域的高度

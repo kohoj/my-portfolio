@@ -18,7 +18,10 @@
         <!-- email -->
         <div class="flex flex-row mb-4 items-center justify-center">
           <!--email address-->
-          <div class="grid w-52 h-12 mr-2 rounded-box bg-base-300 place-items-center">
+          <div
+            class="grid h-12 mr-4 rounded-box bg-base-300 place-items-center"
+            style="width:12.5rem"
+          >
             <span class="select-all">{{ myInfo._Email }}</span>
           </div>
           <!--email send btn-->
@@ -80,7 +83,7 @@
             </svg>
           </a>
           <!-- Wechat -->
-          <div class="dropdown mr-4">
+          <div class="dropdown dropdown-top dropdown-end mr-4">
             <div
               tabindex="0"
               class="card w-14 bg-base-500 btn btn-outline text-base font-normal normal-case place-items-center"
@@ -98,13 +101,13 @@
             </div>
             <div
               tabindex="0"
-              class="mt-2 shadow card border compact dropdown-content bg-base-100 rounded-box"
+              class="mb-4 h-12 w-32 shadow card border compact dropdown-content bg-neutral rounded-box"
             >
               <div class="card-body">
-                <p class="select-none text-left">
-                  ID ~
+                <span class="select-none">
+                  ID :
                   <span class="select-all font-bold">{{ myInfo._Wechat }}</span>
-                </p>
+                </span>
               </div>
             </div>
           </div>
