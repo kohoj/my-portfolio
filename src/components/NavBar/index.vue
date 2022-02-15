@@ -3,12 +3,20 @@
   <!-- topBar part -->
   <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
-      <a href="/components/carousel#hero" class="text-lg font-bold">
+      <a
+        @click="isHero ? '' : toShake()"
+        href="/components/carousel#hero"
+        class="text-lg font-bold"
+      >
         <span :class="{ 'text-primary font-semibold': isHero }">#</span>&nbsp;Koho
       </a>
     </div>
 
-    <Guidance :urlHash="{ isHero, isI, isE, isW }" class="absolute inset-0 m-auto sm:hidden" />
+    <Guidance
+      @click="toShake"
+      :urlHash="{ isHero, isI, isE, isW }"
+      class="absolute inset-0 m-auto sm:hidden"
+    />
 
     <div id="moreBtn" class="navbar-end sm:hidden">
       <div class="dropdown dropdown-end dropdown-hover">
@@ -31,13 +39,13 @@
           class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-sm"
         >
           <li>
-            <a href="/components/carousel#intro">Introduction</a>
+            <a @click="toShake" href="/components/carousel#intro">Introduction</a>
           </li>
           <li>
-            <a href="/components/carousel#exp">Experience</a>
+            <a @click="toShake" href="/components/carousel#exp">Experience</a>
           </li>
           <li>
-            <a href="/components/carousel#works">Works</a>
+            <a @click="toShake" href="/components/carousel#works">Works</a>
           </li>
           <li>
             <a>
@@ -106,7 +114,7 @@ import ArrowBtn from '@/components/NavBar/ArrowBtn'
 export default {
   props: {
     resume: String,
-
+    toShake: Function
   },
   setup() {
     const curUrl = ref(useRouter().currentRoute);

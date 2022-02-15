@@ -2,7 +2,7 @@
   <ScrollMaster>
     <Preload :isLoaded="isLoaded" />
     <div id="app" class="flex flex-col w-full h-full absolute inset-0 m-auto">
-      <NavBar :resume="myInfo._Resume"></NavBar>
+      <NavBar :toShake="toShake" :resume="myInfo._Resume"></NavBar>
       <ColCarousel :class="[{ 'to_shake': needShake }, ' flex-1']"></ColCarousel>
     </div>
     <Contact />
