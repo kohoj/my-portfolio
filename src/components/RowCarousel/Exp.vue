@@ -24,7 +24,8 @@
             <!-- content -->
             <div
               tabindex="0"
-              class="mx-4 bg-neutral collapse shadow-lg text-neutral-content rounded-box collapse-arrow"
+              class="mx-4 border-2 bg-neutral collapse text-neutral-content rounded-box collapse-arrow"
+              style="border-color:#1f1f21"
             >
               <div class="collapse-title">
                 <h3 class="text-lg tracking-wide">

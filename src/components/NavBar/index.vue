@@ -4,7 +4,7 @@
   <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
       <a href="/components/carousel#hero" class="text-lg font-bold">
-        <span :class="{ 'text-primary font-semibold': isHero }">#</span>&nbsp;Koho
+        <span class="text-primary dash-zoom font-semibold">#</span>&nbsp;Koho
       </a>
     </div>
 
@@ -26,7 +26,8 @@
         </div>
         <ul
           tabindex="0"
-          class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-sm"
+          class="p-2 mt-4 -mr-2 border-2 menu dropdown-content bg-neutral rounded-box text-sm"
+          style="border-color:#1f1f21"
         >
           <li>
             <a href="/components/carousel#intro">Introduction</a>
@@ -149,3 +150,19 @@ export default {
   }
 }
 </script>
+<style scoped="scoped">
+.dash-zoom {
+  -webkit-animation: zoom_x 2.5s infinite;
+}
+@-webkit-keyframes zoom_x {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>

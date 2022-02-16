@@ -9,21 +9,21 @@
       ></div>
     </div>
     <!-- Phone : intro -->
-    <div v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
+    <div id="intro" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
       <Intro class="w-full rounded-box" />
       <div
         class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : exp -->
-    <div v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
+    <div id="exp" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
       <Exp class="w-full rounded-box" />
       <div
         class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : works -->
-    <div v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
+    <div id="works" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
       <div
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >Works</div>
@@ -73,22 +73,3 @@ export default {
   }
 }
 </script>
-<style>
-.to-zoom {
-  -webkit-animation: zoom_x 2.5s infinite;
-}
-@-webkit-keyframes zoom_x {
-  0% {
-    -webkit-transform: scale(1.2);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: scale(0.8);
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-    opacity: 1;
-  }
-}
-</style>

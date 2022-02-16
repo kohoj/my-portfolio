@@ -36,7 +36,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped="scoped">
 #preload-wave {
   background-image: url("../assets/wave.png");
 }
