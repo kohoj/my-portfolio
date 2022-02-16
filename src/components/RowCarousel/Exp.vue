@@ -35,15 +35,15 @@
               </div>
               <ul class="collapse-content">
                 <li v-if="exp.p1" class="text-base mb-3">
-                  <span class="text-primary text-sm">▶&nbsp;</span>
+                  <span class="text-primary text-sm">▶ &nbsp;</span>
                   <span v-html="exp.p1"></span>
                 </li>
                 <li v-if="exp.p2" class="text-base mb-3">
-                  <span class="text-primary text-sm">▶&nbsp;</span>
+                  <span class="text-primary text-sm">▶ &nbsp;</span>
                   <span v-html="exp.p2"></span>
                 </li>
                 <li v-if="exp.p3" class="text-base mb-3">
-                  <span class="text-primary text-sm">▶&nbsp;</span>
+                  <span class="text-primary text-sm">▶ &nbsp;</span>
                   <span v-html="exp.p3"></span>
                 </li>
               </ul>
