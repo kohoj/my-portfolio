@@ -4,9 +4,7 @@
       <Intro class="w-full" />
     </div>
     <div id="exp" class="w-full h-full rounded-box carousel-item">
-      <div
-        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
-      >待完成2</div>
+      <Exp class="w-full" />
     </div>
     <div id="works" class="w-full h-full rounded-box carousel-item">
       <div
@@ -16,9 +14,10 @@
   </div>
 </template>
 <script>
-import Intro from '@/components/RowCarousel/Intro'
+import Intro from './Intro'
+import Exp from './Exp'
 export default {
-  components: { Intro }
+  components: { Intro, Exp }
 }
 </script>
 <style>
