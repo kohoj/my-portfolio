@@ -1,14 +1,14 @@
 <!-- hero-page & row-carousel -->
 <template >
-  <div class="carousel rounded-box carousel-vertical mb-2 mx-2">
-    <div id="hero" class="relative w-full h-full carousel-item">
-      <Hero class="w-full" />
+  <div class="carousel rounded-2xl carousel-vertical mb-2 mx-2">
+    <div id="hero" class="relative w-full h-full carousel-item rounded-t-2xl">
+      <Hero class="w-full rounded-t-2xl" />
       <div
         class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
-    <div id="row" class="relative w-full h-full carousel-item">
-      <RowCarousel class="w-full" />
+    <div id="row" class="relative w-full h-full carousel-item rounded-b-2xl">
+      <RowCarousel class="w-full rounded-b-2xl" />
       <div
         class="to-zoom sm:hidden absolute rounded-full top-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>

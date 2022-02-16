@@ -3,7 +3,7 @@
   <Preload :isLoaded="isLoaded" />
   <div id="app" class="flex flex-col w-full h-full absolute inset-0 m-auto">
     <NavBar :resume="myInfo._Resume"></NavBar>
-    <ColCarousel class="flex-1 rounded-box"></ColCarousel>
+    <ColCarousel class="flex-1 rounded-2xl"></ColCarousel>
   </div>
   <Contact />
   <!-- </ScrollMaster> -->

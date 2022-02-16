@@ -1,6 +1,6 @@
 <template>
-  <div class="carousel">
-    <div id="intro" class="relative w-full h-full carousel-item">
+  <div class="carousel rounded-b-2xl">
+    <div id="intro" class="relative w-full h-full carousel-item rounded-bl-2xl">
       <Intro class="w-full" />
       <div
         class="to-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
@@ -52,7 +52,7 @@
         </svg>
       </div>
     </div>
-    <div id="works" class="relative w-full h-full carousel-item">
+    <div id="works" class="relative w-full h-full carousel-item rounded-br-2xl">
       <div
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >待完成3</div>

@@ -1,7 +1,7 @@
 <!-- NavBar -->
 <template>
   <!-- topBar part -->
-  <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+  <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-2xl">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
       <a href="/components/carousel#hero" class="text-lg font-bold">
         <span :class="{ 'text-primary font-semibold': isHero }">#</span>&nbsp;Koho
@@ -26,7 +26,7 @@
         </div>
         <ul
           tabindex="0"
-          class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-sm"
+          class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-2xl text-sm"
         >
           <li>
             <a href="/components/carousel#intro">Introduction</a>
