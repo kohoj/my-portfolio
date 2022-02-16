@@ -1,7 +1,7 @@
 <template >
   <div
     id="container"
-    class="rounded-t-2xl flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
+    class="rounded-box flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
   >
     <div id="wordsBox" class="text-left -mt-28">
       <code class="text-primary text-lg">$ Hi, my name is</code>
