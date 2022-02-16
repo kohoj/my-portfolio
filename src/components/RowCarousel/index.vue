@@ -3,7 +3,7 @@
     <div id="intro" class="relative w-full h-full carousel-item">
       <Intro class="w-full" />
       <div
-        class="arrow-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
+        class="to-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +21,7 @@
     </div>
     <div id="exp" class="relative w-full h-full carousel-item">
       <Exp class="w-full" />
-      <div
-        class="arrow-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85"
-      >
+      <div class="to-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -38,7 +36,7 @@
         </svg>
       </div>
       <div
-        class="arrow-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
+        class="to-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +56,7 @@
       <div
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >待完成3</div>
-      <div
-        class="arrow-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85"
-      >
+      <div class="to-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
