@@ -3,25 +3,77 @@
     <div id="intro" class="relative w-full h-full carousel-item">
       <Intro class="w-full" />
       <div
-        class="guide-line-y sm:hidden absolute rounded-full right-0 my-72 inset-y-0 w-px bg-primary"
-      ></div>
+        class="arrow-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
     <div id="exp" class="relative w-full h-full carousel-item">
       <Exp class="w-full" />
       <div
-        class="guide-line-y sm:hidden absolute rounded-full left-0 my-72 inset-y-0 w-px bg-primary"
-      ></div>
+        class="arrow-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
       <div
-        class="guide-line-y sm:hidden absolute rounded-full right-0 my-72 inset-y-0 w-px bg-primary"
-      ></div>
+        class="arrow-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
     <div id="works" class="relative w-full h-full carousel-item">
       <div
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >待完成3</div>
       <div
-        class="guide-line-y sm:hidden absolute rounded-full left-0 my-72 inset-y-0 w-px bg-primary"
-      ></div>
+        class="arrow-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </template>
