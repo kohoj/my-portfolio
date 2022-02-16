@@ -1,15 +1,27 @@
 <template>
-  <div class="carousel rounded-box">
-    <div id="intro" class="w-full h-full rounded-box carousel-item">
+  <div class="carousel">
+    <div id="intro" class="relative w-full h-full carousel-item">
       <Intro class="w-full" />
+      <div
+        class="guide-line-y sm:hidden absolute rounded-full right-0 my-72 inset-y-0 w-px bg-primary"
+      ></div>
     </div>
-    <div id="exp" class="w-full h-full rounded-box carousel-item">
+    <div id="exp" class="relative w-full h-full carousel-item">
       <Exp class="w-full" />
+      <div
+        class="guide-line-y sm:hidden absolute rounded-full left-0 my-72 inset-y-0 w-px bg-primary"
+      ></div>
+      <div
+        class="guide-line-y sm:hidden absolute rounded-full right-0 my-72 inset-y-0 w-px bg-primary"
+      ></div>
     </div>
-    <div id="works" class="w-full h-full rounded-box carousel-item">
+    <div id="works" class="relative w-full h-full carousel-item">
       <div
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >待完成3</div>
+      <div
+        class="guide-line-y sm:hidden absolute rounded-full left-0 my-72 inset-y-0 w-px bg-primary"
+      ></div>
     </div>
   </div>
 </template>

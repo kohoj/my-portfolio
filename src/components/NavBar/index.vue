@@ -3,20 +3,10 @@
   <!-- topBar part -->
   <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
-      <a
-        @click="isHero ? '' : toShake()"
-        href="/components/carousel#hero"
-        class="text-lg font-bold"
-      >
+      <a href="/components/carousel#hero" class="text-lg font-bold">
         <span :class="{ 'text-primary font-semibold': isHero }">#</span>&nbsp;Koho
       </a>
     </div>
-
-    <Guidance
-      @click="toShake"
-      :urlHash="{ isHero, isI, isE, isW }"
-      class="absolute inset-0 m-auto sm:hidden"
-    />
 
     <div id="moreBtn" class="navbar-end sm:hidden">
       <div class="dropdown dropdown-end dropdown-hover">
@@ -39,13 +29,13 @@
           class="p-2 mt-4 -mr-2 border border-opacity-20 shadow-lg menu dropdown-content bg-neutral rounded-box text-sm"
         >
           <li>
-            <a @click="toShake" href="/components/carousel#intro">Introduction</a>
+            <a href="/components/carousel#intro">Introduction</a>
           </li>
           <li>
-            <a @click="toShake" href="/components/carousel#exp">Experience</a>
+            <a href="/components/carousel#exp">Experience</a>
           </li>
           <li>
-            <a @click="toShake" href="/components/carousel#works">Works</a>
+            <a href="/components/carousel#works">Works</a>
           </li>
           <li>
             <a>
@@ -75,9 +65,18 @@
 
     <div id="middleBtn" class="px-2 mx-2 navbar-center hidden sm:flex">
       <div class="items-stretch">
-        <a href="/components/carousel#intro" class="btn btn-ghost btn-sm rounded-btn">intro</a>
-        <a href="/components/carousel#exp" class="btn btn-ghost btn-sm rounded-btn">exp</a>
-        <a href="/components/carousel#works" class="btn btn-ghost btn-sm rounded-btn">works</a>
+        <a
+          href="/components/carousel#intro"
+          :class="[{ 'text-primary': isI }, 'btn btn-ghost btn-sm rounded-btn']"
+        >intro</a>
+        <a
+          href="/components/carousel#exp"
+          :class="[{ 'text-primary': isE }, 'btn btn-ghost btn-sm rounded-btn']"
+        >experiment</a>
+        <a
+          href="/components/carousel#works"
+          :class="[{ 'text-primary': isW }, 'btn btn-ghost btn-sm rounded-btn']"
+        >works</a>
         <a class="btn btn-ghost btn-sm rounded-btn">
           <label for="modal">Contact</label>
         </a>
@@ -104,17 +103,15 @@
     </div>
   </div>
   <!-- arrow Btn -->
-  <ArrowBtn :urlHash="{ isHero, isI, isE, isW }" />
+  <ArrowBtn class="hidden sm:block" :urlHash="{ isHero, isI, isE, isW }" />
 </template>
 <script>
 import { useRouter } from 'vue-router'
 import { watch, ref } from 'vue'
-import Guidance from '@/components/NavBar/Guidance'
 import ArrowBtn from '@/components/NavBar/ArrowBtn'
 export default {
   props: {
     resume: String,
-    toShake: Function
   },
   setup() {
     const curUrl = ref(useRouter().currentRoute);
@@ -148,7 +145,6 @@ export default {
     }
   },
   components: {
-    Guidance,
     ArrowBtn,
   }
 }

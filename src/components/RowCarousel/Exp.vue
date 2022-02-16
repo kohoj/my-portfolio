@@ -1,14 +1,14 @@
 <template >
-  <main class="sm:border-2 bg-neutral bg-base-pattern sm:border-gray-300 rounded-box">
+  <main class="bg-neutral bg-base-pattern sm:border-gray-300">
     <div class="max-w-5xl p-0 sm:px-4 sm:py-12 mx-auto">
       <div class="opacity-85 grid gap-2 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">
-          <div class="block shadow-lg w-24 h-1 sm:h-3 my-2 rounded-md mx-auto sm:mx-0 bg-primary"></div>
           <div class="text-center sm:text-left">
-            <p class="text-2xl">
+            <p class="text-2xl mt-2 sm:mt-0">
               <span class="card-title">Where I've Worked</span>
             </p>
           </div>
+          <div class="block shadow-lg w-24 h-1 sm:h-3 mt-2 rounded-md mx-auto sm:mx-0 bg-primary"></div>
         </div>
 
         <div class="col-span-12 space-y-2 relative p-0 sm:pl-4 text-left sm:col-span-8">
