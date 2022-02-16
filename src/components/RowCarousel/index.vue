@@ -1,7 +1,7 @@
 <template>
   <div class="carousel rounded-box">
     <div id="intro" class="relative w-full h-full carousel-item rounded-box">
-      <Intro class="w-full" />
+      <Intro class="w-full rounded-box" />
       <div
         class="to-zoom sm:hidden absolute right-0 text-center top-1/2 text-primary bg-opacity-85"
       >
@@ -19,8 +19,8 @@
         </svg>
       </div>
     </div>
-    <div id="exp" class="relative w-full h-full carousel-item">
-      <Exp class="w-full" />
+    <div id="exp" class="relative w-full h-full carousel-item rounded-box">
+      <Exp class="w-full rounded-box" />
       <div class="to-zoom sm:hidden absolute left-0 text-center top-1/2 text-primary bg-opacity-85">
         <svg
           xmlns="http://www.w3.org/2000/svg"
