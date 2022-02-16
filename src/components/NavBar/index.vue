@@ -103,12 +103,12 @@
     </div>
   </div>
   <!-- arrow Btn -->
-  <ArrowBtn class="hidden sm:block" :urlHash="{ isHero, isI, isE, isW }" />
+  <ArrowBtnForPC class="hidden sm:block" :urlHash="{ isHero, isI, isE, isW }" />
 </template>
 <script>
 import { useRouter } from 'vue-router'
 import { watch, ref } from 'vue'
-import ArrowBtn from '@/components/NavBar/ArrowBtn'
+import ArrowBtnForPC from '@/components/NavBar/ArrowBtnForPC'
 export default {
   props: {
     resume: String,
@@ -145,7 +145,7 @@ export default {
     }
   },
   components: {
-    ArrowBtn,
+    ArrowBtnForPC,
   }
 }
 </script>

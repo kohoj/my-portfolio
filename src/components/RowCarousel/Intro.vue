@@ -5,7 +5,7 @@
         <img class="w-24 sm:w-40 md:w-56 lg:w-60" :src="myInfo._Avatar" alt="Avatar" />
         <div class="card-title mb-0 px-0 border-b sm:border-0 md:text-2xl">About Me</div>
       </div>
-      <div class="card-body max-w-lg p-4">
+      <div class="shadow-lg rounded-box bg-neutral card-body max-w-lg p-4">
         <p class="text-left mb-2 md:text-lg" v-html="myInfo._Detail"></p>
         <div class="flex flex-wrap">
           <div
