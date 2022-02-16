@@ -1,7 +1,7 @@
 <template >
   <input type="checkbox" id="modal" class="modal-toggle" />
   <div class="modal z-50">
-    <div class="modal-box max-w-lg rounded-2xl border text-gray-200 m-6 shadow-lg">
+    <div class="modal-box max-w-lg rounded-box border text-gray-200 m-6 shadow-lg">
       <!-- avatar -->
       <div class="avatar online mb-2">
         <div class="rounded-full border-2 w-24 h-24">
@@ -19,7 +19,7 @@
         <div class="flex flex-row mb-4 items-center justify-center">
           <!--email address-->
           <div
-            class="grid h-12 mr-4 rounded-2xl bg-base-300 place-items-center"
+            class="grid h-12 mr-4 rounded-box bg-base-300 place-items-center"
             style="width:12.5rem"
           >
             <span class="select-all">{{ myInfo._Email }}</span>
@@ -101,7 +101,7 @@
             </div>
             <div
               tabindex="0"
-              class="mb-4 h-12 w-32 shadow card compact dropdown-content bg-gray-100 text-gray-800 rounded-2xl"
+              class="mb-4 h-12 w-32 shadow card compact dropdown-content bg-gray-100 text-gray-800 rounded-box"
             >
               <div class="card-body">
                 <span class="select-none">

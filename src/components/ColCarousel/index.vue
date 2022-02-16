@@ -1,6 +1,6 @@
 <!-- hero-page & row-carousel -->
 <template >
-  <div class="carousel rounded-2xl carousel-vertical mb-2 mx-2">
+  <div class="carousel rounded-box carousel-vertical mb-2 mx-2">
     <div id="hero" class="relative w-full h-full carousel-item rounded-box">
       <Hero class="w-full rounded-box" />
       <div

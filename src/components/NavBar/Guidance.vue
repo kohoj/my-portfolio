@@ -2,7 +2,7 @@
   <a
     data-theme="forest"
     :href="`/components/carousel#${urlHash.isHero ? 'intro' : 'hero'}`"
-    class="btn shadow-lg m-0 rounded-2xl w-min text-sm"
+    class="btn shadow-lg m-0 rounded-box w-min text-sm"
   >
     <code v-show="urlHash.isHero">▼</code>
     <code v-show="!urlHash.isHero">▲</code>
