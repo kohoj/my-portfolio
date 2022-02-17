@@ -20,7 +20,7 @@
 
       <div id="contactBtn">
         <label for="modal" class="btn btn-primary btn-outline modal-button">
-          <code class="breath-word text-base font-normal normal-case">Contact me</code>
+          <code class="text-base font-normal normal-case">Contact me</code>
         </label>
       </div>
     </div>
