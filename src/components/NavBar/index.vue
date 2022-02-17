@@ -1,9 +1,7 @@
 <!-- NavBar -->
 <template>
   <!-- topBar part -->
-  <div
-    class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box sm:rounded-b-none"
-  >
+  <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-t-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
       <a href="/components/carousel#hero" class="text-lg font-bold">
         <span class="text-primary breath-word font-semibold">#</span>&nbsp;Koho

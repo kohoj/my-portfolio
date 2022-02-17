@@ -2,8 +2,8 @@
 <template >
   <div class="carousel carousel-vertical mb-2 mx-2">
     <!-- hero -->
-    <div id="hero" class="relative w-full h-full carousel-item rounded-t-box sm:rounded-none">
-      <Hero class="w-full rounded-t-box sm:rounded-none" />
+    <div id="hero" class="relative w-full h-full carousel-item">
+      <Hero class="w-full" />
       <div
         class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
