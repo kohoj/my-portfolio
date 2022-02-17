@@ -4,7 +4,7 @@
   <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
       <a href="/components/carousel#hero" class="text-lg font-bold">
-        <span class="text-primary dash-zoom font-semibold">#</span>&nbsp;Koho
+        <span class="text-primary breath-word font-semibold">#</span>&nbsp;Koho
       </a>
     </div>
 
@@ -150,19 +150,3 @@ export default {
   }
 }
 </script>
-<style scoped="scoped">
-.dash-zoom {
-  -webkit-animation: zoom_x 2.5s infinite;
-}
-@-webkit-keyframes zoom_x {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>

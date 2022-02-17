@@ -4,7 +4,7 @@
     class="rounded-box flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
   >
     <div id="wordsBox" class="text-left -mt-28">
-      <code class="text-primary text-lg">$ Hi, my name is</code>
+      <code class="breath-word text-primary text-lg">$ Hi, my name is</code>
 
       <div
         id="bigWords"
@@ -20,7 +20,7 @@
 
       <div id="contactBtn">
         <label for="modal" class="btn btn-primary btn-outline modal-button">
-          <code class="text-base font-normal normal-case">Contact me</code>
+          <code class="breath-word text-base font-normal normal-case">Contact me</code>
         </label>
       </div>
     </div>

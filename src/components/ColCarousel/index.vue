@@ -5,21 +5,21 @@
     <div id="hero" class="relative w-full h-full carousel-item rounded-box">
       <Hero class="w-full rounded-box" />
       <div
-        class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : intro -->
     <div id="intro" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
       <Intro class="w-full rounded-box" />
       <div
-        class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : exp -->
     <div id="exp" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
       <Exp class="w-full rounded-box" />
       <div
-        class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : works -->
@@ -28,7 +28,7 @@
         class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
       >Works</div>
       <div
-        class="to-zoom sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!--Phone : Contact-->
