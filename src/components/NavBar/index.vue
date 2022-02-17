@@ -85,7 +85,7 @@
     </div>
 
     <div id="downloadBtn" class="navbar-end hidden sm:flex">
-      <div data-tip="简历.pdf" class="tooltip tooltip-bottom">
+      <div data-tip="简历.pdf" class="z-40 tooltip tooltip-bottom">
         <a target="_blank" :href="resume" class="btn btn-square btn-ghost">
           <svg
             class="w-6 h-6"

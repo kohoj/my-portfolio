@@ -9,6 +9,7 @@
       <div
         id="bigWords"
         class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold"
+        style=" font-family:'Bakbak One', Avenir, Helvetica, Arial, sans-serif;"
       >
         <p class="text-gray-200 my-3">Koho Zheng.</p>
         <p class="text-gray-400 mt-1">I build things for the web.</p>
