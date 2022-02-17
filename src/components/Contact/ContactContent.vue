@@ -1,6 +1,6 @@
 <template >
   <div
-    :class="[{ ' mx-0.5  bg-neutral border-none transform': !fromBtn }, 'modal-box max-w-lg rounded-box border text-gray-200 m-6 shadow-lg']"
+    :class="[{ ' mx-0.5  bg-neutral border-none transform py-16': !fromBtn }, 'modal-box max-w-lg rounded-box border text-gray-200 m-6 shadow-lg']"
   >
     <!-- avatar -->
     <div class="avatar online mb-2">

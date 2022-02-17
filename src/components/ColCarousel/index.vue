@@ -1,43 +1,43 @@
 <!-- hero-page & row-carousel -->
 <template >
-  <div class="carousel rounded-box carousel-vertical mb-2 mx-2">
+  <div class="carousel carousel-vertical mb-2 mx-2">
     <!-- hero -->
-    <div id="hero" class="relative w-full h-full carousel-item rounded-box">
-      <Hero class="w-full rounded-box" />
+    <div id="hero" class="relative w-full h-full carousel-item rounded-t-box sm:rounded-none">
+      <Hero class="w-full rounded-t-box sm:rounded-none" />
       <div
         class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : intro -->
-    <div id="intro" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
-      <Intro class="w-full rounded-box" />
+    <div id="intro" v-if="isPhone" class="relative w-full h-full carousel-item">
+      <Intro class="w-full" />
       <div
         class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : exp -->
-    <div id="exp" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
-      <Exp class="w-full rounded-box" />
+    <div id="exp" v-if="isPhone" class="relative w-full h-full carousel-item">
+      <Exp class="w-full" />
       <div
         class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : works -->
-    <div id="works" v-if="isPhone" class="relative w-full h-full carousel-item rounded-box">
+    <div id="works" v-if="isPhone" class="relative w-full h-full carousel-item rounded-b-box">
       <div
-        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6"
+        class="w-full flex flex-col bg-neutral bg-base-pattern mx-auto items-center justify-center p-6 rounded-b-box"
       >Works</div>
       <div
         class="breath-line sm:hidden absolute rounded-full bottom-0 mx-36 inset-x-0 h-px bg-primary bg-opacity-85"
       ></div>
     </div>
     <!--Phone : Contact-->
-    <div v-if="isPhone" class="flex items-center w-full h-full carousel-item rounded-box">
-      <ContactContent class="w-full h-full rounded-box" />
+    <div v-if="isPhone" class="flex items-center w-full h-full carousel-item">
+      <ContactContent />
     </div>
     <!-- PC : intro & exp & works -->
-    <div v-else id="row" class="relative w-full h-full carousel-item rounded-box">
-      <RowCarousel class="w-full rounded-box" />
+    <div v-else id="row" class="relative w-full h-full carousel-item">
+      <RowCarousel class="w-full" />
     </div>
   </div>
 </template>

@@ -1,7 +1,9 @@
 <!-- NavBar -->
 <template>
   <!-- topBar part -->
-  <div class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+  <div
+    class="navbar relative m-2 shadow-lg bg-neutral text-neutral-content rounded-box sm:rounded-b-none"
+  >
     <div id="logoBtn" class="px-2 mx-2 navbar-start">
       <a href="/components/carousel#hero" class="text-lg font-bold">
         <span class="text-primary breath-word font-semibold">#</span>&nbsp;Koho
@@ -68,15 +70,15 @@
       <div class="items-stretch">
         <a
           href="/components/carousel#intro"
-          :class="[{ 'text-primary': isI }, 'btn btn-ghost btn-sm rounded-btn']"
+          :class="[{ 'text-primary breath-word': isI }, 'btn btn-ghost btn-sm rounded-btn']"
         >intro</a>
         <a
           href="/components/carousel#exp"
-          :class="[{ 'text-primary': isE }, 'btn btn-ghost btn-sm rounded-btn']"
+          :class="[{ 'text-primary breath-word': isE }, 'btn btn-ghost btn-sm rounded-btn']"
         >experiment</a>
         <a
           href="/components/carousel#works"
-          :class="[{ 'text-primary': isW }, 'btn btn-ghost btn-sm rounded-btn']"
+          :class="[{ 'text-primary breath-word': isW }, 'btn btn-ghost btn-sm rounded-btn']"
         >works</a>
         <a class="btn btn-ghost btn-sm rounded-btn">
           <label for="modal">Contact</label>
