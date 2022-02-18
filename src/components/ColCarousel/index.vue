@@ -38,7 +38,7 @@
     <!-- PC : intro & exp & works -->
     <!-- <div v-else id="row" class="relative w-full h-full carousel-item"> -->
     <div id="row" class="relative w-full h-full carousel-item">
-      <RowCarousel class="w-full" style="touch-action: pan-x" />
+      <RowCarousel class="w-full" style="touch-action: pan-x pan-y" />
     </div>
   </div>
 </template>
