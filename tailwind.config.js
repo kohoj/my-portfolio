@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: [
       './src/**/*.vue',
       './public/**/*.html',
@@ -20,7 +20,7 @@ module.exports = {
     base: true,
     utils: true,
     logs: true,
-    rtl: false,
+    rtl: false
   },
   theme: {
     variants: {},

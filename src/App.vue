@@ -2,7 +2,7 @@
   <Preload :isLoaded="isLoaded" />
   <div id="app" class="flex flex-col w-full h-full absolute inset-0 m-auto opacity-90">
     <NavBar :resume="myInfo._Resume"></NavBar>
-    <ColCarousel class="flex-1"></ColCarousel>
+    <Home class="flex-1"></Home>
   </div>
   <Contact />
 </template>
@@ -12,7 +12,7 @@ import { getNotionData } from './service/index.js'
 import { reactive, ref, provide } from 'vue'
 import Preload from '@/components/Preload'
 import NavBar from '@/components/NavBar'
-import ColCarousel from '@/components/ColCarousel'
+import Home from '@/components/Home'
 import Contact from '@/components/Contact'
 export default {
   name: 'App',
@@ -69,7 +69,7 @@ export default {
   components: {
     Preload,
     NavBar,
-    ColCarousel,
+    Home,
     Contact
   }
 }
