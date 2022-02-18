@@ -36,8 +36,9 @@
       <ContactContent />
     </div>
     <!-- PC : intro & exp & works -->
-    <div v-else id="row" class="relative w-full h-full carousel-item">
-      <RowCarousel class="w-full" />
+    <!-- <div v-else id="row" class="relative w-full h-full carousel-item"> -->
+    <div id="row" class="relative w-full h-full carousel-item">
+      <RowCarousel class="w-full" style="touch-action: pan-x" />
     </div>
   </div>
 </template>
