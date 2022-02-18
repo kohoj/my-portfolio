@@ -110,17 +110,17 @@ export default {
 
 <style scoped="scoped">
 .animation-10s {
-  animation: scroller 10s linear infinite;
+  animation: scroller 20s ease-in-out infinite;
   width: calc(9rem * 8);
   display: flex;
 }
 .animation-12s {
-  animation: scroller 12s linear infinite;
+  animation: scroller 24s ease-in-out infinite;
   width: calc(9rem * 8);
   display: flex;
 }
 .animation-14s {
-  animation: scroller 14s linear infinite;
+  animation: scroller 28s ease-in-out infinite;
   width: calc(9rem * 8);
   display: flex;
 }
@@ -129,8 +129,11 @@ export default {
   0% {
     transform: translateX(calc(9rem * -4));
   }
-  100% {
+  50% {
     transform: translateX(calc(9rem * 0));
+  }
+  100% {
+    transform: translateX(calc(9rem * -4));
   }
 }
 </style>
