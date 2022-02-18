@@ -6,11 +6,11 @@ module.exports = {
       new UglifyJsPlugin({
         uglifyOptions: {
           compress: {
-            drop_console: true
+            drop_console: false
           }
         },
-        sourceMap: true,
-        parallel: true
+        sourceMap: false,
+        parallel: false
       })
     ]
   }

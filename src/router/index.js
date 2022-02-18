@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     redirect: () => {
-      return window.innerWidth >= 500 ? { path: '/components/carousel' } : { path: '/welcome' }
+      return window.innerWidth >= 500 ? { path: '/components/carousel' } : { path: '/mobile' }
     }
   }
 ]
