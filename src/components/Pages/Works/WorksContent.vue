@@ -8,7 +8,7 @@
     style="border-color:#1f1f21"
   >
     <div
-      class="card items-center justify-start sm:justify-center rounded-t-none h-full lg:flex-row bg-neutral bg-base-pattern shadow-xl sm:rounded-box sm:bg-none"
+      class="card items-center justify-center rounded-t-none h-full lg:flex-row bg-neutral shadow-xl sm:rounded-box"
     >
       <!-- photos -->
       <figure style="max-width: 500px">
@@ -39,7 +39,7 @@
                 v-for="(v, k) in [...new Array(8).keys()]"
                 :key="v + k"
                 class="my-3 w-28 mr-8 text-white flex justify-center items-start"
-              >Koho</span>
+              >Koho's Portfolio</span>
             </div>
             <div class="animation-14s justify-start">
               <div
@@ -54,10 +54,10 @@
       </figure>
       <!-- words -->
       <div class="card-body max-h-80 relative z-20 items-center justify-start overflow-hidden">
-        <div class="rounded-box bg-neutral text-left px-3 flex relative py-8">
+        <div class="rounded-box bg-neutral text-left px-3 flex relative">
           <div class="max-w-sm flex flex-col relative z-20">
             <!-- line -->
-            <span class="w-20 h-1 bg-primary mb-4"></span>
+            <span class="w-20 h-1 rounded-full bg-primary mb-4"></span>
             <!-- name -->
             <a
               :href="item.link"
@@ -92,7 +92,7 @@
         <!-- scroll tip -->
         <div
           v-if="i != myInfo._Works.length - 1"
-          class="breath-line sm:hidden absolute rounded-full h-1/4 right-0 my-auto inset-y-0 w-px bg-primary bg-opacity-85"
+          class="breath-line z-40 sm:hidden absolute rounded-full h-1/4 right-0 my-auto inset-y-0 w-1 bg-primary bg-opacity-85"
         ></div>
       </div>
     </div>
