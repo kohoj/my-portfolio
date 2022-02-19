@@ -38,7 +38,7 @@
               <span
                 v-for="(v, k) in [...new Array(8).keys()]"
                 :key="v + k"
-                class="my-3 w-28 mr-8 text-white flex justify-center items-start"
+                class="my-3 w-28 mr-8 text-white text-xs flex justify-center items-start"
               >Koho's Portfolio</span>
             </div>
             <div class="animation-14s justify-start">
