@@ -13,7 +13,7 @@
       <!-- photos -->
       <figure style="max-width: 500px">
         <div class="w-full max-h-80 bg-black overflow-hidden">
-          <div class="transform rotate-12">
+          <div class="transform -translate-y-10 rotate-12">
             <div class="animation-10s justify-start">
               <div
                 v-for="(v, k) in [...new Array(8).keys()]"
