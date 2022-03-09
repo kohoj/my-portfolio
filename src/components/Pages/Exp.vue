@@ -1,5 +1,5 @@
 <template >
-  <main class="bg-neutral bg-base-pattern sm:border-gray-300">
+  <main class="bg-neutral bg-base-pattern">
     <div class="max-w-5xl p-0 sm:px-4 sm:py-12 mx-auto">
       <div class="opacity-85 grid gap-2 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">

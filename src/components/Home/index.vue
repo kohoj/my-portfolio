@@ -5,28 +5,28 @@
     <div id="hero" class="relative w-full h-full carousel-item">
       <Hero class="w-full" />
       <div
-        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-auto w-1/4 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line z-40 sm:hidden absolute rounded-full bottom-0.5 mx-auto w-1/4 inset-x-0 h-1 bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : intro -->
     <div id="intro" v-if="isPhone" class="relative w-full h-full carousel-item">
       <Intro class="w-full" />
       <div
-        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-auto w-1/4 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line z-40 sm:hidden absolute rounded-full bottom-0.5 mx-auto w-1/4 inset-x-0 h-1 bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : exp -->
     <div id="exp" v-if="isPhone" class="relative w-full h-full carousel-item">
       <Exp class="w-full" />
       <div
-        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-auto w-1/4 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line z-40 sm:hidden absolute rounded-full bottom-0.5 mx-auto w-1/4 inset-x-0 h-1 bg-primary bg-opacity-85"
       ></div>
     </div>
     <!-- Phone : works -->
     <div id="works" v-if="isPhone" class="relative w-full h-full carousel-item rounded-b-box">
       <Works class="w-full rounded-b-box" />
       <div
-        class="breath-line sm:hidden absolute rounded-full bottom-0 mx-auto w-1/4 inset-x-0 h-px bg-primary bg-opacity-85"
+        class="breath-line z-40 sm:hidden absolute rounded-full bottom-0.5 mx-auto w-1/4 inset-x-0 h-1 bg-primary bg-opacity-85"
       ></div>
     </div>
     <!--Phone : Contact-->
@@ -34,7 +34,7 @@
       <ContactContent />
     </div>
     <!-- PC : intro & exp & works -->
-    <div v-else id="row" class="relative w-full h-full carousel-item">
+    <div v-else class="relative w-full h-full carousel-item">
       <Pages class="w-full" />
     </div>
   </div>
@@ -47,7 +47,7 @@ import Exp from '@/components/Pages/Exp'
 import Works from '@/components/Pages/Works'
 import Pages from '@/components/Pages'
 import ContactContent from '@/components/Contact/ContactContent'
-import { ref } from 'vue'
+import { provide } from 'vue'
 export default {
   components: {
     Pages,
@@ -58,15 +58,18 @@ export default {
     ContactContent
   },
   setup() {
-    const isPhone = ref(true);
+    let isPhone = true;
 
     (() => {
-      console.log(isPhone.value, window.innerWidth)
-      if (window.innerWidth > 500) {
-        isPhone.value = false;
+      console.log(isPhone, window.innerWidth)
+      if (window.innerWidth >= 500) {
+        isPhone = false;
       }
-      console.log(isPhone.value)
+      provide('isPhone', isPhone)
+      console.log(isPhone)
     })();
+
+
     return {
       isPhone
     }

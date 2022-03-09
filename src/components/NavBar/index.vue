@@ -78,9 +78,7 @@
           href="/components/carousel#works"
           :class="[{ 'text-primary breath-word': isW }, 'btn btn-ghost btn-sm rounded-btn']"
         >works</a>
-        <a class="btn btn-ghost btn-sm rounded-btn">
-          <label for="modal">Contact</label>
-        </a>
+        <label for="modal" class="btn btn-ghost btn-sm rounded-btn">Contact</label>
       </div>
     </div>
 

@@ -12,7 +12,7 @@
         style=" font-family:'Bakbak One', Avenir, Helvetica, Arial, sans-serif;"
       >
         <p class="text-gray-200 my-3">Koho Zheng.</p>
-        <p class="text-gray-400 mt-1">I build things for the web.</p>
+        <p class="text-gray-400 mt-1">I create things for the web.</p>
       </div>
 
       <div id="briefIntro" class="max-w-lg">
