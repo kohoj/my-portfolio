@@ -30,7 +30,7 @@
               <div class="collapse-title">
                 <h3 class="text-lg tracking-wide">
                   {{ exp.job }}
-                  <span class="text-primary font-semibold">@{{ exp.company }}</span>
+                  <p class="text-primary font-semibold">@{{ exp.company }}</p>
                 </h3>
                 <time class="text-xs tracking-wide uppercase text-coolGray-600">{{ exp.date }}</time>
               </div>
