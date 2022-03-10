@@ -16,37 +16,29 @@
           <div class="transform -translate-y-10 rotate-12">
             <div class="animation-10s justify-start">
               <div
-                v-for="(v, k) in [...new Array(8).keys()]"
-                :key="v + k"
-                class="w-28 h-56 mr-8 rounded-box bg-cover bg-center shadow-lg"
-                style="background-image: url(https://api.lorem.space/image/album?w=400&h=400);"
+                v-for="(photo, j) in item.photos"
+                :key="j"
+                v-show="(item.photos.length > 6 && item.photos.length < 11) || (item.photos.length <= 6 ? j < 3 : j < 8)"
+                class="mr-8 h-56 rounded-box bg-cover bg-center shadow-lg"
+                :style="{ width: (item.photos.length > 6 ? '7rem' : '22rem'), backgroundImage: `url(${photo.url})` }"
               ></div>
-              <!-- <div
-                  v-for="(photo, j) in item.photos"
-                  :key="j"
-                  class="w-28 h-56 mr-8  rounded-box bg-cover bg-center shadow-lg"
-                  :style="{ backgroundImage: `url(${photo})` }"
-                ></div>
-                <div
-                  v-for="(photo, j) in item.photos"
-                  :key="j"
-                  class="w-28 h-56 mr-8  rounded-box bg-cover bg-center shadow-lg"
-                  :style="{ backgroundImage: `url(${photo})` }"
-              ></div>-->
             </div>
+
             <div class="animation-12s justify-start">
               <span
                 v-for="(v, k) in [...new Array(8).keys()]"
                 :key="v + k"
                 class="my-3 w-28 mr-8 text-white text-xs flex justify-center items-start"
-              >Koho's Portfolio</span>
+              >{{ item.works }}</span>
             </div>
+
             <div class="animation-14s justify-start">
               <div
-                v-for="(v, k) in [...new Array(8).keys()]"
-                :key="v + k"
-                class="w-28 h-56 mr-8 rounded-box bg-cover bg-center shadow-lg"
-                style="background-image: url(https://api.lorem.space/image/album?w=400&h=400);"
+                v-for="(photo, j) in item.photos"
+                :key="j"
+                v-show="(item.photos.length > 6 && item.photos.length < 11) || (item.photos.length <= 6 ? j >= 3 : j >= 8)"
+                class="mr-8 h-56 rounded-box bg-cover bg-center shadow-lg"
+                :style="{ width: (item.photos.length > 6 && item.photos.length < 11 ? '7rem' : '22rem'), backgroundImage: `url(${photo.url})` }"
               ></div>
             </div>
           </div>
@@ -83,8 +75,8 @@
             <p class="text-sm sm:text-base mb-4">{{ item.detail }}</p>
             <!-- stacks -->
             <div class="flex flex-wrap">
-              <div v-for="(item, i) in myInfo._Stack" :key="i" class>
-                <code class="text-xs mr-3">{{ item }}</code>
+              <div v-for="(stack, i) in item.stacks" :key="i" class>
+                <code class="text-xs mr-3">{{ stack }}</code>
               </div>
             </div>
           </div>
