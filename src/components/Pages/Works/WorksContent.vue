@@ -72,7 +72,7 @@
               </svg>
             </a>
             <!-- detail -->
-            <p class="text-sm sm:text-base mb-4">{{ item.detail }}</p>
+            <p class="text-sm sm:text-base mb-4" v-html="item.detail"></p>
             <!-- stacks -->
             <div class="flex flex-wrap">
               <div v-for="(stack, i) in item.stacks" :key="i" class>
