@@ -73,7 +73,7 @@
         <a
           href="/components/carousel#exp"
           :class="[{ 'text-primary breath-word': isE }, 'btn btn-ghost btn-sm rounded-btn']"
-        >experiment</a>
+        >Experience</a>
         <a
           href="/components/carousel#works"
           :class="[{ 'text-primary breath-word': isW }, 'btn btn-ghost btn-sm rounded-btn']"
